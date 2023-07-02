@@ -4,7 +4,7 @@ from millify import millify
 
 st.title("Report Performance Card")
 uploaded_file = st.file_uploader("File",type=["xlsx"])
-if uploaded_file:
+if uploaded_file is not None:
     file_name = uploaded_file.name
     a = 1
     if "21TO" in file_name :
