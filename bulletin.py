@@ -4,9 +4,9 @@ from millify import millify
 
 st.title("Report Performance Card")
 uploaded_file = st.file_uploader("File",type=["xlsx"])
+a = 1
 if uploaded_file is not None:
-    file_name = uploaded_file.name
-    a = 1
+    file_name = uploaded_file.name 
     if "21TO" in file_name :
         a = 0
     excel_data = pd.read_excel(uploaded_file,sheet_name=None)
