@@ -25,7 +25,7 @@ if uploaded_file is not None:
         st.metric("Assiette",millify(excel_data["IND4"]["ASSIETTE"].str.replace(",","_").astype("float").sum()))
         st.metric("Tax",millify(excel_data["IND4"]["TAX"].str.replace(",","_").astype("float").sum()))
         
-cuo = st.radio("Custom office",["21TO","CDL"],horizontal=False,index=a)
+    cuo = st.radio("Custom office",["21TO","CDL"],horizontal=False,index=a)
 
 if st.button("Download"):
     st.write("Press")
