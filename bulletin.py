@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 from millify import millify
 
+st.set_page_config(page_title="Performance",layout="wide")
+
 st.title("Report Performance Card")
 uploaded_file = st.file_uploader("File",type=["xlsx"])
 a = 1
